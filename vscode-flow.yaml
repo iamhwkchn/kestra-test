@@ -1,0 +1,13 @@
+id: vscode-test
+namespace: dev
+
+
+tasks:
+  - id: python-script
+    type: io.kestra.plugin.scripts.python.Script
+    runner: DOCKER
+    docker:
+      image: python:3.11-slim
+    warningOnStdErr: false
+    script: |
+      print("this is Sri.🤓 ")
